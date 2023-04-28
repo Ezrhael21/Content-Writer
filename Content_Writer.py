@@ -7,6 +7,8 @@
 with open("mylife.txt", "w") as my_file:
 # create a loop for y/n
 # ask the user to enter a line
+    user_text = input("Enter line: ")
+    my_file.write("Enter line: " + user_text + "\n")
 # ask the user y/n for more lines
 # write the user text and user line in mylife file
 # if no break the loop
