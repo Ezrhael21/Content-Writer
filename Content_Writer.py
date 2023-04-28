@@ -3,6 +3,10 @@
 # 04/27/2023
 # Program 3: Write a text into a file
 
+import pyfiglet
+font = pyfiglet.figlet_format("Writing a text into a file", font = "big", justify = "center")
+print (font)
+
 # Introduction to the Program 
 user_name = input("Enter your username: ")
 print ("Hello!", user_name)
