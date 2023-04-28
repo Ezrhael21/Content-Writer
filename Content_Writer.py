@@ -4,25 +4,34 @@
 # Program 3: Write a text into a file
 
 import pyfiglet
+
+print ("=" * 100)
 font = pyfiglet.figlet_format("Writing a text into a file", font = "big", justify = "center")
 print (font)
 
 # Introduction to the Program 
+print ("=" * 100)
 user_name = input("Enter your username: ")
+print ("=" * 100)
 print ("Hello!", user_name)
 print ("Today, We are going to Write a text into a file")
 
 # open a mylife text file
 with open("mylife.txt", "w") as my_file:
-# create a loop for y/n
+    # create a loop for y/n
     while True:
-# ask the user to enter a line
+        print ("=" * 100)
+        # ask the user to enter a line
         user_text = input("Enter line: ")
-# ask the user y/n for more lines
+        # ask the user y/n for more lines
         user_line = input("Are there more lines? (y/n) ")
-# write the user text and user line in mylife file
+        # write the user text and user line in mylife file
         my_file.write("Enter line: " + user_text + "\n")
         my_file.write("Are there more lines? (y/n) " + user_line + "\n")
-# if no break the loop
+        # if no break the loop
         if user_line.lower() == "n":
             break
+
+print ("=" * 100)
+print ("Thank you for using this program.")
+print ("=" * 100)
