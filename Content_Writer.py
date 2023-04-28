@@ -3,6 +3,11 @@
 # 04/27/2023
 # Program 3: Write a text into a file
 
+# Introduction to the Program 
+user_name = input("Enter your username: ")
+print ("Hello!", user_name)
+print ("Today, We are going to Write a text into a file")
+
 # open a mylife text file
 with open("mylife.txt", "w") as my_file:
 # create a loop for y/n
