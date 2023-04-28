@@ -4,6 +4,7 @@
 # Program 3: Write a text into a file
 
 # open a mylife text file
+with open("mylife.txt", "w") as my_file:
 # create a loop for y/n
 # ask the user to enter a line
 # ask the user y/n for more lines
