@@ -1,0 +1,2 @@
+Enter line: Sicat
+Are there more lines? (y/n) n

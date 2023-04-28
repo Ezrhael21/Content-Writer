@@ -6,11 +6,14 @@
 # open a mylife text file
 with open("mylife.txt", "w") as my_file:
 # create a loop for y/n
+    while True:
 # ask the user to enter a line
-    user_text = input("Enter line: ")
-    my_file.write("Enter line: " + user_text + "\n")
+        user_text = input("Enter line: ")
 # ask the user y/n for more lines
-    user_line = input("Are there more lines? (y/n) ")
-    my_file.write("Are there more lines? (y/n) " + user_line + "\n")
+        user_line = input("Are there more lines? (y/n) ")
 # write the user text and user line in mylife file
+        my_file.write("Enter line: " + user_text + "\n")
+        my_file.write("Are there more lines? (y/n) " + user_line + "\n")
 # if no break the loop
+        if user_line.lower() == "n":
+            break
