@@ -10,5 +10,7 @@ with open("mylife.txt", "w") as my_file:
     user_text = input("Enter line: ")
     my_file.write("Enter line: " + user_text + "\n")
 # ask the user y/n for more lines
+    user_line = input("Are there more lines? (y/n) ")
+    my_file.write("Are there more lines? (y/n) " + user_line + "\n")
 # write the user text and user line in mylife file
 # if no break the loop
